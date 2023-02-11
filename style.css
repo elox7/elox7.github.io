@@ -1,0 +1,848 @@
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+} 
+.Page { 
+    position: relative;  
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    padding: 8px 0;
+    justify-content: space-around; 
+    background-color: rgb(115, 108, 108);
+}   
+nav img{ 
+  height: 50px;
+  width: auto; 
+  position: relative;
+  margin-top:auto;
+  border-radius: 8px;
+}
+nav ul li { 
+    display: inline-block;
+    margin: 15px 20px; 
+}
+nav ul li a{ 
+    text-decoration: none;
+    color: rgb(243, 240, 240);
+    font-weight: bold;
+} 
+nav ul li a:hover{
+  background-color: rgb(9, 9, 9);
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+.detail{ 
+    color: white; 
+    margin-left: 4% ;
+    margin-top: 7%; 
+    text-align: center;
+} 
+.detail h1{ 
+    font-size: 80px; 
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+} 
+.detail h2{ 
+    font-size: 50px; 
+    color: rgb(68, 73, 68);
+} 
+.detail h2 span{
+  color: rgb(202, 191, 191);
+}
+.detail p { 
+    color: rgb(86, 84, 88);
+    font-size: 40px;
+   margin-top: 10px;
+}  
+.button{ 
+    margin-top: 50px;
+} 
+.button a{ 
+    background: orange; 
+    padding: 10px 18px;  
+    text-decoration: none; 
+    font-weight: bold; 
+    color: black;  
+    text-transform: uppercase; 
+    border-radius: 20px;
+}   
+.button a:hover{ 
+    background: rgb(126, 111, 131); 
+    color: white;
+}
+.image{ 
+    width: 40%;
+    height: 80%;
+    position: absolute; 
+    bottom: 0;
+    margin-left: 450px; 
+} 
+.image img { 
+    height: 450px;  
+    float: right;  
+    background-size: cover;   
+    border-radius: 50%;
+}   
+.detail, .image{
+  width: 50%;
+}
+
+
+
+
+
+.Page2 { 
+    position: relative;  
+    width: 100%;
+    height: 100vh;
+}
+.About, .About1, .About2, .About3 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(14, 14, 14);
+    overflow: hidden;
+    display: flex;
+} 
+.About img, .About1 img, .About2 img, .About3 img {
+    width: 40%; 
+    margin-top: 80px;
+    margin-left: 130px;
+    height: 80vh; 
+    border-radius: 50%; 
+}
+.About .text-box{
+    width: 50%;
+}
+.text-box{
+    margin-top: 20px; 
+    text-align: center;
+}
+.text-box h1{
+    position: absolute; 
+    color: rgb(246, 246, 246); 
+    margin-top: 100px; 
+    margin-left: 200px;
+    text-transform: uppercase;
+    font-size: 40px;
+} 
+.text-box p{
+    color: rgb(254, 253, 251);  
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.text-box span{
+    background-color: rgb(255, 3, 3);
+    height: 1px;
+    width: 130px;
+    position: absolute; 
+    margin-top: 180px; 
+    margin-left: 830px;
+    left: 0;
+}
+.About{
+    animation: slide1 12s linear infinite;
+}
+.About1{
+    animation: slide2 12s linear infinite;
+} 
+.About2{
+    animation: slide3 12s linear infinite;
+} 
+.About3{
+    animation: slide4 12s linear infinite;
+
+} 
+@keyframes slide1 {
+        0%{
+            visibility: visible; 
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+             visibility: hidden;
+         }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+    }
+
+    @keyframes slide2 {
+        0%{
+            visibility: hidden; 
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: visible;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: hidden;
+        }
+    }
+
+    @keyframes slide3 {
+        0%{
+            visibility: hidden; 
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: visible;
+        }
+        100%{
+            visibility: hidden;
+        }
+    }
+    @keyframes slide4 {
+        0%{
+            visibility: hidden; 
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+    } 
+
+
+
+
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+.page3, .container{
+    margin-top: 15px;
+}
+.container h1{
+    text-transform: uppercase; 
+    font-size: 55px;
+    position: relative;
+    text-align: center;
+}
+.container span{
+    background-color: rgb(62, 3, 255);
+    height: 2px;
+    width: 150px;
+    position: absolute; 
+    margin-top: 70px; 
+    margin-left: 555px;
+    left: 0;
+}
+.box{
+    width: 40%;
+    background-color: #7823ce;
+    color: white;
+    padding: 20px 20px 50px;
+    border-radius: 10px;
+    margin-top: 60px; 
+    margin-left: 50px;
+} 
+.box h2{
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+} 
+.type{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.bar{
+    position: relative;
+    border: 2px solid red;
+    border-radius: 15px;
+}
+.bar1{
+    position: relative;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.bar2{
+    position: relative;
+    border: 2px solid rgb(0, 255, 170);
+    border-radius: 15px;
+}
+.bar3{
+    position: relative;
+    border: 2px solid rgb(238, 255, 0);
+    border-radius: 15px;
+}
+.bar4{
+    position: relative;
+    border: 2px solid #fe0291;
+    border-radius: 15px;
+}
+#html-bar {
+    position: relative;
+    width: 0%;
+    height: 9px;
+    border-radius: 10px;
+    background-color: red;
+}
+#CSS-bar{
+    position: relative;
+    width: 0%;
+    height: 9px;
+    border-radius: 10px;
+    background-color: black;
+}
+#JAVA-bar{
+    position: relative;
+    width: 0%;
+    height: 9px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 170);
+}
+#PYTHON-bar{
+    position: relative;
+    width: 0%;
+    height: 9px;
+    border-radius: 10px;
+    background-color: rgb(238, 255, 0);
+}
+#Q-BASIC-bar{
+    position: relative;
+    width: 0%;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ff0191;
+}
+
+
+#html-bar{
+    animation: html-fill 5s forwards;
+}
+@keyframes html-fill {
+    100%{
+        width: 70%;
+    }
+}
+
+#CSS-bar{
+    animation: css-fill 5s forwards;
+}
+@keyframes css-fill {
+    100%{
+        width: 60%;
+    }
+}
+
+#JAVA-bar{
+    animation: java-fill 5s forwards;
+}
+@keyframes java-fill {
+    100%{
+        width: 40%;
+    }
+}
+
+#PYTHON-bar{
+    animation: python-fill 5s forwards;
+}
+@keyframes python-fill {
+    100%{
+        width: 65%;
+    }
+}
+
+#Q-BASIC-bar{
+    animation: q-basic-fill 5s forwards;
+}
+@keyframes q-basic-fill {
+    100%{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+.circle{
+    margin-top: 20px;
+
+}
+.Lang{
+    width: 40%;
+    background-color: rgb(39, 247, 7);
+    color: black;
+    padding: 20px 20px 50px;
+    border-radius: 10px;
+    margin-top: 150px; 
+    margin-left: 642px; 
+}
+.Lang h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size: 40px;
+}
+
+
+
+
+.progress-circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+  }
+  
+  .progress-circle svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .progress-circle, circle {
+    stroke: rgb(3, 3, 250);
+    stroke-width: 9;
+    fill: transparent;
+    stroke-dasharray: calc(2 * 3.14 * 60);
+    stroke-dashoffset: calc((100 - 100) / 100 * 2 * 3.14 * 60);
+    transition: stroke-dasoffset 5s ease;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(11, 11, 11);
+}  
+
+.Text1{
+    color: rgb(11, 11, 11);
+    font-size: 30px;
+    padding-top: 150px;
+    padding-left: 15px;
+}
+
+
+.A {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: -100px;
+    margin-left: 300px;
+  }
+  
+  .A svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .A circle {
+    stroke: rgb(251, 1, 1);
+    stroke-width: 9;
+    fill: transparent;
+    stroke-dasharray: calc(2 * 3.14 * 60);
+    stroke-dashoffset: calc((100 - 80) / 100 * 2 * 3.14 * 60);
+    transition: stroke-dashoffset 5s ease;
+  }
+  
+  .B {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(2, 2, 2);
+}  
+
+.Text2{
+    color: black;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 330px;
+}
+
+
+
+
+.C{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-left: 170px;
+    text-align: center;
+  }
+  
+  .C svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .C circle {
+    stroke: rgb(48, 25, 52);
+    stroke-width: 9;
+    fill: transparent;
+    stroke-dasharray: calc(2 * 3.14 * 60);
+    stroke-dashoffset: calc((100 - 70) / 100 * 2 * 3.14 * 60);
+    transition: stroke-dashoffset 5s ease;
+  }
+  
+  .D {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: black;
+}  
+
+.Text3{
+    color: black;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 190px;
+}
+
+
+
+
+
+
+.Edu{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.Edu, .header2{
+    margin-top: 15px;
+}
+.header2 h1{
+    text-transform: uppercase; 
+    font-size: 55px;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.header2 span{
+    background-color: rgb(40, 71, 246);
+    height: 3px;
+    width: 150px;
+    position: absolute;
+    margin-top: 100px; 
+    margin-left: 555px;
+    left: 0;
+}
+
+.School1, .School2, .School3{
+    position: absolute;
+    text-align: center; 
+    width: 50%;
+    margin-left: -3%;
+}
+.School1 h1, .School2 h1, .School3 h1{
+    color:white; 
+    padding-top: 5%;
+    text-transform: uppercase;
+    font-size: 31px;
+    margin: 2%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    padding-left: 16%;
+}
+.School1 h2, .School2 h2, .School3 h2{
+    color: rgb(255, 254, 254);
+    text-transform: capitalize;
+    position: absolute; 
+    padding-top: 17%; 
+    padding-left: 25%;
+    font-size: 25px;
+    margin-bottom: 5%;
+    
+}
+.School1 h3, .School2 h3, .School3 h3 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    padding-top: 27%;
+    padding-left: 35%;
+}
+.School1 h4, .School2 h4, .School3 h4{
+    color: white;
+    font-size: 20px;
+    padding-top: 32%;
+    padding-left: 35%;
+    position: absolute;
+}
+.School1 h5, .School2 h5, .School3 h5 {
+    color: rgb(141, 141, 132);
+    padding-top: 44%;
+    padding-left: 23%;
+    font-size: 20px;
+    position: absolute;
+}
+.button1, .button2, .button3{
+    margin-top: 30%;
+    margin-left: 5%;
+    position: absolute;
+}
+.button1 a, .button2 a, .button3 a{ 
+    background: rgb(181, 178, 172); 
+    padding: 10px 18px ;  
+    margin-top: 15%;
+    text-decoration: none; 
+    font-weight: bold; 
+    color: rgb(13, 13, 13);  
+    text-transform: uppercase; 
+    border-radius: 20px;
+}
+.button1 a:hover, .button2 a:hover, .button3 a:hover { 
+    background: rgb(126, 111, 131); 
+    color: white;
+}
+
+.image1, .image2, .image3 { 
+    width: 50%;
+    height: 55%;
+    margin-left: 50%;  
+    bottom: 0;
+} 
+.image1 img { 
+    height: 75%;    
+    background-size: cover;   
+    border-radius: 50%;
+    margin-top: 4%;
+    position: absolute;
+    margin-left: -2%;
+}    
+.image2 img{
+    height: 60%;    
+    background-size: cover;   
+    border-radius: 50%;
+    margin-top: 8%;
+    position: absolute;
+    margin-left: -7%;
+}
+.image3 img{
+    height: 80%;
+    background-size: cover;   
+    border-radius: 50%;
+    margin-top: 3%;
+   position: absolute;
+   margin-left: -5%;
+   width: 600px;
+}
+.School{
+    animation: slide7 12s linear infinite;
+} 
+.college{
+    animation: slide8 12s linear infinite;
+}  
+.college1{
+    animation: slide9 12s linear infinite;
+}
+@keyframes slide7 {
+        0%{
+            visibility: visible; 
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+             visibility: hidden;
+         }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: hidden;
+        }
+    }
+
+    @keyframes slide8 {
+        0%{
+            visibility: hidden; 
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+            visibility: visible;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: hidden;
+        }
+    } 
+    @keyframes slide9 {
+        0%{
+            visibility: hidden; 
+        }
+        25%{
+            visibility: hidden;
+        }
+        50%{
+             visibility: hidden;
+         }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+    }
+
+
+
+
+
+.Contact{
+        width: 100%;
+        height: 65vh;
+        overflow: hidden;
+    }
+.headerC{
+    text-align: center;
+}
+.headerC h1{
+        text-transform: uppercase; 
+        font-size: 55px;
+        text-align: center;
+        color: rgb(5, 4, 4);
+        padding-top: 1%;
+    }
+.headerC span{
+        background-color: rgb(67, 68, 72);
+        height: 3px;
+        width: 150px;
+        position: absolute;
+        margin-top: 7%; 
+        margin-left: 555px;
+        left: 0;
+}
+.text3, .text4, .text5{
+    text-align: center;
+    margin-left: 15%;
+    position: relative;
+    margin-top: 8%;
+    display: inline-block;
+    margin-bottom: 20%;
+}
+.text3 h2, .text4 h2, .text5 h2{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text3 p, .text4 p, .text5 p{
+    padding-top: 6%;
+    font-size: 17px;
+}
+
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+    background: rgb(67, 65, 65);
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+footer .up {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+footer .icons li , footer .up li{
+    list-style: none;
+    text-decoration: none;
+}
+footer .icons li a {
+    font-size: 2em;
+    color: white;
+    margin: 0 10px; 
+    display: inline-block;
+}
+footer .up li a{
+    font-size: 1em;
+    color: rgb(16, 16, 16);
+    margin: 10px; 
+    display: inline-block;
+}
+footer .icons li a:hover {
+    transform: translateY(-5px);
+}
+
+footer .up li a{
+    text-decoration: none;
+    font-size: 1em;
+}
+footer p{
+    color: white;
+    text-align: center;
+    margin: 7px;
+}
+footer .color{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(112, 112, 117);
+}
+footer .up li a:hover{
+    color: white; 
+    
+}
